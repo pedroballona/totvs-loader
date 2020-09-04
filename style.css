@@ -1,12 +1,13 @@
 :root {
+  --imageWidth: 60vw;
   --initialSize: 75%;
   --animationDuration: 2.3s;
 }
 
 .relative {
   position: relative;
-  width: 602px;
-  height: 180px;
+  width: var(--imageWidth);
+  height: calc(var(--imageWidth) / 3.35);
  }
 
 .logo {   

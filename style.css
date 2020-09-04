@@ -1,12 +1,12 @@
 :root {
   --initialSize: 75%;
-  --animationDuration: 2.5s;
+  --animationDuration: 2.3s;
 }
 
 .relative {
   position: relative;
-  width: 300px;
-  height: 90px;
+  width: 602px;
+  height: 180px;
  }
 
 .logo {   
@@ -70,7 +70,7 @@
   15%, 35% {
     width: 90%;
     height: 90%;
-    transform: translate(-51%, -50%);
+    transform: translate(-51.5%, -50%);
   }
 }
 
@@ -87,7 +87,7 @@
   15%, 35% {
     width: 90%;
     height: 90%;
-    transform: translate(-49.2%, -50%);
+    transform: translate(-49%, -50%);
   }
 }
 

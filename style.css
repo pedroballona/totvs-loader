@@ -1,5 +1,5 @@
 :root {
-  --imageWidth: 60vw;
+  --imageWidth: 40vw;
   --initialSize: 75%;
   --animationDuration: 2.3s;
 }
@@ -26,11 +26,13 @@
 .yellow {
   background-image: url('totvs-icon-yellow.svg');
   z-index: 97;
+  opacity: 0.8;
 }
 
 .blue {
   background-image: url('totvs-icon-blue.svg');
   z-index: 98;
+  opacity: 0.8;
 }
 
 .center {

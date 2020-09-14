@@ -18,19 +18,19 @@
   background-position: center;
 }
 
-.black {
-  background-image: url('totvs-icon-black.svg');
+.front {
+  background-image: url('totvs-icon-front.svg');
   z-index: 99;
 }
 
-.yellow {
-  background-image: url('totvs-icon-yellow.svg');
+.bg-1 {
+  background-image: url('totvs-icon-bg-1.svg');
   z-index: 97;
   opacity: 0.8;
 }
 
-.blue {
-  background-image: url('totvs-icon-blue.svg');
+.bg-2 {
+  background-image: url('totvs-icon-bg-2.svg');
   z-index: 98;
   opacity: 0.8;
 }

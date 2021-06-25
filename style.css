@@ -4,53 +4,45 @@
   --animationDuration: 2.3s;
 }
 
-.relative {
-  position: relative;
-  width: var(--imageWidth);
-  height: calc(var(--imageWidth) / 3.35);
- }
+.size {
+  width: 328px;
+  height: 97px;
+}
 
-.logo {   
-  width: var(--initialSize);
-  height: var(--initialSize);
+.first {
+  z-index: 100;
+}
+.second {
+  z-index: 98;
+}
+.third {
+  z-index: 97;
+}
+
+.logo {  
   background-size: contain;
   background-repeat: no-repeat; 
   background-position: center;
 }
 
 .front {
-  background-image: url('totvs-icon-front.svg');
-  z-index: 99;
+  background-image: url('totvs-icon-front.svg');  
 }
 
 .bg-1 {
   background-image: url('totvs-icon-bg-1.svg');
-  z-index: 97;
-  opacity: 0.8;
 }
 
 .bg-2 {
   background-image: url('totvs-icon-bg-2.svg');
-  z-index: 98;
-  opacity: 0.8;
-}
-
-.center {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes pulse {
-  0%, 20%, 40%, 100% {
-    width: var(--initialSize);
-    height: var(--initialSize);
+  0%, 20%, 40%, 100%  {
+    transform: scale(1);
   }
   15%, 35% {
-    width: 90%;
-    height: 90%;
+    transform: scale(1.3);
   }
 }
 
@@ -65,15 +57,11 @@
 }
 
 @keyframes pulse-left {
-  0%, 20%, 40%, 100% {
-    width: var(--initialSize);
-    height: var(--initialSize);
-    transform: translate(-50%, -50%);
+  0%, 20%, 40%, 100%  {
+    transform: scale(1);
   }
   15%, 35% {
-    width: 90%;
-    height: 90%;
-    transform: translate(-51.5%, -50%);
+    transform: scale(1.3) translate(-1.5%);
   }
 }
 
@@ -82,18 +70,22 @@
 }
 
 @keyframes pulse-right {
-  0%, 20%, 40%, 100% {
-    width: var(--initialSize);
-    height: var(--initialSize);
-    transform: translate(-50%, -50%);
+  0%, 20%, 40%, 100%  {
+    transform: scale(1);
   }
   15%, 35% {
-    width: 90%;
-    height: 90%;
-    transform: translate(-49%, -50%);
+    transform: scale(1.3) translate(1.5%);
   }
 }
 
 .pulse.right {
   animation-name: pulse-right;
+}
+
+.center {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

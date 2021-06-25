@@ -1,12 +1,12 @@
 :root {
-  --imageWidth: 40vw;
-  --initialSize: 75%;
-  --animationDuration: 2.3s;
+  --animationDuration: 1.8s;
 }
 
 .size {
-  width: 328px;
-  height: 97px;
+  width: 50vw;
+  height: calc(0.29 * 50vw);
+  max-width: 329px;
+  max-height: 98px;
 }
 
 .first {
